@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ResConfig name="ActivityOpenConfig">
+	<message name="ActivityOpenConfig" cname="活动开启配置表" desc="活动开启配置表">
+		<field name="ActivityID" rule="singular" type="int32" cname="活动ID" desc="活动ID" />
+		<field name="ActivityName" rule="singular" type="string" cname="活动名称" desc="活动名称" />
+		<field name="ActivityType" rule="singular" type="int32" cname="活动类型" desc="活动类型" />
+		<field name="ActivityTypeParam" rule="singular" type="int32" cname="活动类型参数" desc="活动类型参数" />
+		<field name="ActivityUIType" rule="singular" type="int32" cname="活动界面类型" desc="活动界面类型" />
+		<field name="OpenLevel" rule="singular" type="int32" cname="开放等级" desc="开放等级" />
+		<field name="CreateRoleDays" rule="singular" type="int32" cname="创角天数限制" desc="创角天数限制" />
+		<field name="SortID" rule="singular" type="int32" cname="排序id" desc="排序id" />
+		<field name="OpenType" rule="singular" type="int32" cname="开启类型" desc="活动开启类型,ACTIVITYOPENTYPE" />
+		<field name="OpenParam" rule="repeated" type="int64" cname="活动开启参数" desc="活动开启参数" />
+		<field name="StatisticsOpenTime" rule="singular" type="uint32" cname="统计开始时间" desc="统计开始时间" />
+		<field name="OpenSvrTimeLimit" rule="singular" type="uint32" cname="开服时间限制" desc="开服时间限制" />
+		<field name="DelayTime" rule="singular" type="uint32" cname="延迟消失时间" desc="延迟消失时间" />
+		<field name="IsNeedSelectSubID" rule="singular" type="int32" cname="是否选择活动子ID" desc="是否选择活动子ID" />
+		<field name="ActOpenLaterSvrOpenLimit" rule="singular" type="int32" cname="是否限制活动开启时间晚于开服" desc="是否限制活动开启时间晚于开服" />
+		<field name="IsNeedSelectSvrID" rule="singular" type="int32" cname="是否选择服务器范围" desc="是否选择服务器范围" />
+	</message>
+</ResConfig>

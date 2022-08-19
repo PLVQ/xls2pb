@@ -1,0 +1,48 @@
+/**
+* @file:   *.proto
+* @author: peng
+* @brief:  这个文件是通过工具自动生成的，建议不要手动修改
+*/
+syntax="proto3";
+option go_package="./resource;resource";
+package resource;
+
+message ActivityOpenConfig{
+    /** 活动ID */
+    int32 ActivityID = 1;
+    /** 活动名称 */
+    string ActivityName = 2;
+    /** 活动类型 */
+    int32 ActivityType = 3;
+    /** 活动类型参数 */
+    int32 ActivityTypeParam = 4;
+    /** 活动界面类型 */
+    int32 ActivityUIType = 5;
+    /** 开放等级 */
+    int32 OpenLevel = 6;
+    /** 创角天数限制 */
+    int32 CreateRoleDays = 7;
+    /** 排序id */
+    int32 SortID = 8;
+    /** 活动开启类型,ACTIVITYOPENTYPE */
+    int32 OpenType = 9;
+    /** 活动开启参数 */
+    repeated int64 OpenParam = 10;
+    /** 统计开始时间 */
+    uint32 StatisticsOpenTime = 11;
+    /** 开服时间限制 */
+    uint32 OpenSvrTimeLimit = 12;
+    /** 延迟消失时间 */
+    uint32 DelayTime = 13;
+    /** 是否选择活动子ID */
+    int32 IsNeedSelectSubID = 14;
+    /** 是否限制活动开启时间晚于开服 */
+    int32 ActOpenLaterSvrOpenLimit = 15;
+    /** 是否选择服务器范围 */
+    int32 IsNeedSelectSvrID = 16;
+}
+
+message ActivityOpenConfigList {
+    repeated ActivityOpenConfig data = 1;
+}
+
